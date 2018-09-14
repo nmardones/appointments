@@ -16,6 +16,7 @@ Appointment is REST API for scheduling appointments to have a dance with Death.
 * git clone https://github.com/nmardones/appointments
 * composer update
 * php artisan migrate
+* php artisan serve
 
 ## About me!
 

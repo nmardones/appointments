@@ -26,7 +26,7 @@ class AppointmentRequest extends FormRequest
         return [
             'contact' => 'required',
             'date' => 'date_format:"Y-m-d"|required',
-            'start_time' => 'required|date_format:H:i:s|unique:appointments,start_time',
+            'start_time' => 'required|date_format:H:i:s',
             'finish_time' => 'date_format:H:i:s',
         ];
     }
