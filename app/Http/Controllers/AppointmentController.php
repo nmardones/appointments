@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use App\Appointment;
+use App\Http\Requests\AppointmentRequest;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -17,7 +17,7 @@ class AppointmentController extends Controller
     {
         return view('appointment.create');
     }
-    public function store(Request $request)
+    public function store(AppointmentRequest $request)
     {
         Appointment::create($request->all());
         return redirect()->route('appointment.index');
