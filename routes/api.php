@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['prefix' => '/v1', 'namespace' => 'Api\v1', 'as' => 'api.'], function () {
-    Route::get('posts', 'AppointmentController@index');
+    Route::get('appointment', 'AppointmentController@index');
+    Route::get('appointment/{id}', 'AppointmentController@show');
 });
 
