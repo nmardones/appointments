@@ -15,10 +15,12 @@ Appointment is REST API for scheduling appointments to have a dance with Death.
 
 * git clone https://github.com/nmardones/appointments
 * composer update
-* php artisan key:generate
 * sudo cp .env.exampe .env
+* php artisan key:generate
 * Editing .env
 > DB_DATABASE=appointment
+> DB_USERNAME=youruser
+> DB_PASSWORD=yourpassword
 * php artisan migrate
 * php artisan serve
 
