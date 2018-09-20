@@ -52,4 +52,5 @@ class AppointmentController extends Controller
         $appointment->update($request->all());
         return redirect()->route('appointment.index');
     }
+
 }
